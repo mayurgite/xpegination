@@ -59,7 +59,7 @@ const Pagination = () => {
       </table>
       <div className='buttons'>
         <button disabled={currentPage === 1} onClick={handlePrevPage}>Previous</button>
-        <div><p className='pageNumber'>{currentPage}</p></div>
+        <p className='one'>{currentPage}</p>
         <button disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
       </div>
       
