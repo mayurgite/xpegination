@@ -59,8 +59,8 @@ const Pagination = () => {
       </table>
       <div className='buttons'>
         <button disabled={currentPage === 1} onClick={handlePrevPage}>Previous</button>
-        <h4 className='one'>{currentPage} </h4>
-        <button disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
+        <h4 className='one'>{currentPage}</h4>
+        <button id="Next" disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
       </div>
       
     </div>
