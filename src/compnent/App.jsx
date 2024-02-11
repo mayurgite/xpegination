@@ -60,7 +60,7 @@ const Pagination = () => {
       <div className='buttons'>
         <button disabled={currentPage === 1} onClick={handlePrevPage}>Previous</button>
         <p className='one'>{currentPage}</p>
-        <button disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
+        <button id="mybutton" disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
       </div>
       
     </div>
