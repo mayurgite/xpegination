@@ -42,6 +42,7 @@ const Pagination = () => {
       <table>
         <thead>
           <tr>
+            <th>No</th>
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
@@ -50,6 +51,7 @@ const Pagination = () => {
         <tbody>
           {currentData.map((item, index) => (
             <tr key={index}>
+              <td>{item.no}</td>
               <td>{item.name}</td>
               <td>{item.email}</td>
               <td>{item.role}</td>
@@ -59,8 +61,10 @@ const Pagination = () => {
       </table>
       <div className='buttons'>
         <button disabled={currentPage === 1} onClick={handlePrevPage}>Previous</button>
-        <p className='one'>{currentPage}</p>
-        <button id="mybutton" disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
+        <div>
+          <button id="mybutton" disabled={currentPage === totalPages} onClick={handleNextPage}>Next</button>
+          <p className='one'>{currentPage}</p>
+        </div>
       </div>
       
     </div>
